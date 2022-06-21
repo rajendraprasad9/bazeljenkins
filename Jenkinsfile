@@ -1,12 +1,9 @@
 node {
-    stages {
-        stage('checkout'){
-        echo "git checkout stage"
-            }
+   stage('checkout'){
+   echo "git checkout stage"
+   }
                 
-    stages {
-        stage('Compile') {
-            steps {
-                bazel build  main       
-            }
+   stage('Bazel Build') {
+   echo "From Bazel Build Stage"
+    }
    
