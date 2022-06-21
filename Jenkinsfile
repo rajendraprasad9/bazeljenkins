@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                bazel build             }
+                bazel build  main       
+            }
         }
         stage('Unit Tests') {
             steps {
